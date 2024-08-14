@@ -1,0 +1,32 @@
+{
+    "admin":{
+        "username":"",
+        "password":"",
+        "name":""
+    },
+    "contact":[
+        {
+            "Name":"",
+            "email":"",
+            "message":"",
+            "time":""
+        }
+    ],
+    "programming":[
+        {
+         "quesition":"",
+         "example":"",
+         "answer":"",
+         "reply":[
+            {"name":"","message":""}
+         ]   
+        }
+    ],
+    "store":[
+        {
+            "type":"",
+            "data":""
+        }
+    ],
+    "gallery":[]
+}
