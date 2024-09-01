@@ -4,7 +4,7 @@ import {programmingModel} from '../modal/index.js'
 
 const postProgramming = (req,res)=>{
     const programmingDoc = new programmingModel({
-        questiontion: req.body.questiontion,
+        question: req.body.question,
         example: req.body.example,
         answer: req.body.answer,
     })
@@ -14,7 +14,6 @@ const postProgramming = (req,res)=>{
 }
 
 const getProgramming = async(req,res)=>{
-
 
     const resp = await programmingModel.find({});
     res.send(resp)

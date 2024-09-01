@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { configDotenv } from 'dotenv';
 configDotenv();
-let url = process.env.MONGODB_ATLAS
+let url = process.env.MONGODB_URL
 async function fn(url) {
     let x = await mongoose.connect(url, { dbName: 'arunwebdb' })
     console.log('database connected...')
@@ -47,7 +47,8 @@ const storeObject =
                 type: String,
                 default: 'Text'
             },
-            data: String
+            data: String,
+            file:String,
         }
     ];
 
