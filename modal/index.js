@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { configDotenv } from 'dotenv';
 configDotenv();
-let url = process.env.MONGODB_URL
+let url = process.env.MONGODB_ATLAS
 async function fn(url) {
     let x = await mongoose.connect(url, { dbName: 'arunwebdb' })
     console.log('database connected...')
